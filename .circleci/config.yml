@@ -1,8 +1,9 @@
 version: 2
 jobs:
   build:
-    image: ubuntu-2004:202010-01
-  steps:
+    machine:
+      image: ubuntu-2004:202010-01
+    steps:
     - checkout
     - run:
         name: Install Test Requirments
